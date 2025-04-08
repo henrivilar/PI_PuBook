@@ -29,7 +29,7 @@ export default function Home() {
       <main className="flex flex-col items-center justify-center text-center mt-10 leading-none">
         <h2 className="text-[#2D3142] text-[50px] font-serif">Descubra novos mundos com o</h2>
         <h1 className="text-[#2D3142] text-[100px] font-bold">PUBOOK</h1>
-        <img src="/imgs/Book_Hero.png" alt="" />
+        <img src="/imgs/Book_Hero.png" alt="" className="w-[500px]"/>
       </main>
     </body>
   );
