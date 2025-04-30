@@ -3,19 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --gray-bg: #D4D4D4;
+  --blue-bg: #4F5D75;
+  --orange-bg: #EF8354;
+  --blue-text: #2D3142;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .linha {
+    @apply w-6/12 bg-[#D4D4D4] h-[2px] rounded;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  .div-perguntas {
+    @apply flex items-center gap-5 mt-5 mb-5;
+  }
+
+  .text-perguntas {
+    @apply text-2xl text-[--gray-bg];
+  }
 }
