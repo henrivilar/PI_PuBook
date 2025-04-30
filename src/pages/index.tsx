@@ -1,8 +1,8 @@
 export default function Home() {
   return (
     <body className="bg-[--gray-bg]">
-      <header className="">
-        <nav className="w-10/12 h-20 bg-white flex justify-around items-center text-[--blue-text] rounded-xl my-10 shadow-lg mx-auto">
+      <header className="flex justify-center">
+        <nav className="fixed z-10 w-10/12 h-20 bg-white flex justify-around items-center text-[--blue-text] rounded-xl mt-10 shadow-2xl mx-auto">
           <img src="/imgs/Logo.png" alt="" className="w-12 h-12" />
           <ul className="flex gap-10 font-bold">
             <li className="hover:underline"><a href="">Quem somos</a></li>
@@ -13,7 +13,7 @@ export default function Home() {
           <button className="text-[--gray-bg] bg-[--blue-text] font-bold w-44 h-12 rounded-full">Começar Leitura</button>
         </nav>
       </header>
-      <main className="flex flex-col items-center justify-center mt-10 leading-none">
+      <main className="flex flex-col items-center justify-center pt-40 leading-none">
         {/* Hero Section */}
         <section className="text-center">
           <h2 className="text-[--blue-text] text-[50px] font-serif">Descubra novos mundos com o</h2>
