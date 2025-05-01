@@ -6,5 +6,19 @@
   --gray-bg: #D4D4D4;
   --blue-bg: #2D3142;
   --orange-bg: #EF8354;
+  --blue-text: #2D3142;
 }
 
+@layer components {
+  .linha {
+    @apply w-6/12 bg-[#D4D4D4] h-[2px] rounded;
+  }
+
+  .div-perguntas {
+    @apply flex items-center gap-5 mt-5 mb-5;
+  }
+
+  .text-perguntas {
+    @apply text-2xl text-[--gray-bg];
+  }
+}
