@@ -27,3 +27,7 @@
     @apply flex gap-5 bg-[--input-bg] w-[400px] h-10 pl-4 rounded-lg;
   }
 }
+
+html {
+  @apply scroll-smooth;
+}

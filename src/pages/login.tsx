@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Login() {
   return (
     <div className="h-screen bg-[--gray-bg] flex justify-center items-center">
@@ -9,22 +11,22 @@ export default function Login() {
         <form action="" method="post" className="flex flex-col gap-4">
           <div className="input-bg">
             <img src="/imgs/User.svg" alt="" />
-            <input type="email" name="email" id="email" placeholder="Email" className="bg-[--input-bg]"/>
+            <input type="email" name="email" id="email" placeholder="Email" className="bg-[--input-bg] outline-none w-full"/>
           </div>
           <div className="input-bg">
             <img src="/imgs/Locked.svg" alt="" />
-            <input type="password" name="password" id="password" placeholder="Senha" className="bg-[--input-bg]"/>
+            <input type="password" name="password" id="password" placeholder="Senha" className="bg-[--input-bg] outline-none w-full"/>
           </div>
           <div className="flex justify-between text-[--blue-bg]">
             <div className="flex gap-3">
               <input type="checkbox" name="checkbox" id="checkbox" className="bg-[--input-bg]"/>
               <p>Lembrar senha</p>
             </div>
-            <a href="" className="hover:underline">Esqueci minha senha</a>
+            <a href="" className="hover:underline text-blue-500">Esqueci minha senha</a>
           </div>
-          <input type="button" value="ENTRAR" className="h-[60px] w-[200px] bg-[--blue-bg] mx-auto text-white font-bold text-[24px] rounded-3xl m-5"/>
+          <input type="button" value="ENTRAR" className="h-[60px] w-[200px] bg-[--blue-bg] mx-auto text-white font-bold text-[24px] rounded-3xl m-5 hover:shadow-xl hover:bg-[#4F5D75] hover:cursor-pointer"/>
         </form>
-        <p className="m-3">Ainda não possui uma conta? <a href="http://localhost:3000/cadastro" className="hover:underline text-blue-500">Cadastre-se</a></p>
+        <p className="m-3">Ainda não possui uma conta? <Link href="/cadastro" className="hover:underline text-blue-500">Cadastre-se</Link></p>
         <div className="flex items-center gap-3 mb-5">
           <div className="h-[1px] w-[137px] bg-[--blue-bg] rounded-full"></div>
           <p>ou entre com</p>
