@@ -7,6 +7,7 @@
   --blue-bg: #2D3142;
   --orange-bg: #EF8354;
   --blue-text: #2D3142;
+  --input-bg: #F6F6F6;
 }
 
 @layer components {
@@ -20,5 +21,9 @@
 
   .text-perguntas {
     @apply text-2xl text-[--gray-bg];
+  }
+
+  .input-bg {
+    @apply flex gap-5 bg-[--input-bg] w-[400px] h-10 pl-4 rounded-lg;
   }
 }
