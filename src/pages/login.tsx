@@ -1,6 +1,6 @@
 export default function Login() {
   return (
-    <body className="h-screen bg-[--gray-bg] flex justify-center items-center">
+    <div className="h-screen bg-[--gray-bg] flex justify-center items-center">
       <section>
         <img src="/imgs/Image_Login.svg" alt="" />
       </section>
@@ -24,6 +24,7 @@ export default function Login() {
           </div>
           <input type="button" value="ENTRAR" className="h-[60px] w-[200px] bg-[--blue-bg] mx-auto text-white font-bold text-[24px] rounded-3xl m-5"/>
         </form>
+        <p className="m-3">Ainda não possui uma conta? <a href="http://localhost:3000/cadastro" className="hover:underline text-blue-500">Cadastre-se</a></p>
         <div className="flex items-center gap-3 mb-5">
           <div className="h-[1px] w-[137px] bg-[--blue-bg] rounded-full"></div>
           <p>ou entre com</p>
@@ -35,6 +36,6 @@ export default function Login() {
           <a href="" className="w-[100px] h-[100px] bg-[--input-bg] rounded-full flex justify-center items-center"><img src="/imgs/Microsoft-Logo.svg" alt=""/></a>
         </div>
       </section>
-    </body>
+    </div>
   );
 }
