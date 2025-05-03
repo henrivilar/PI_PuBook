@@ -24,7 +24,7 @@ export default function Login() {
             </div>
             <a href="" className="hover:underline text-blue-500">Esqueci minha senha</a>
           </div>
-          <input type="button" value="ENTRAR" className="h-[60px] w-[200px] bg-[--blue-bg] mx-auto text-white font-bold text-[24px] rounded-3xl m-5 hover:shadow-xl hover:bg-[#4F5D75] hover:cursor-pointer"/>
+          <Link href="/dashboard" className="mx-auto"><input type="button" value="ENTRAR" className="h-[60px] w-[200px] bg-[--blue-bg] mx-auto text-white font-bold text-[24px] rounded-3xl m-5 hover:shadow-xl hover:bg-[#4F5D75] hover:cursor-pointer"/></Link>
         </form>
         <p className="m-3">Ainda não possui uma conta? <Link href="/cadastro" className="hover:underline text-blue-500">Cadastre-se</Link></p>
         <div className="flex items-center gap-3 mb-5">

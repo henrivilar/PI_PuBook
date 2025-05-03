@@ -1,4 +1,10 @@
 import Link from "next/link";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 export default function Home() {
   return (
@@ -39,37 +45,63 @@ export default function Home() {
         </section>
         {/* Perguntas Frequentes Section */}
         <section id="Duvidas" className="bg-[--blue-bg] w-full px-20 py-10">
-          <h2 className="text-[--gray-bg] text-3xl font-bold mb-10">Perguntas Frequentes</h2>
-          <div className="div-perguntas">
-            <img src="/imgs/Mais.svg" alt="" />
-            <p className="text-perguntas">O que e o PuBook?</p>
-          </div>
-          <div className="linha"></div>
-          <div className="div-perguntas">
-            <img src="/imgs/Mais.svg" alt="" />
-            <p className="text-perguntas">Preciso pagar para usar o PuBook?</p>
-          </div>
-          <div className="linha"></div>
-          <div className="div-perguntas">
-            <img src="/imgs/Mais.svg" alt="" />
-            <p className="text-perguntas">Quem pode usar o PuBook?</p>
-          </div>
-          <div className="linha"></div>
-          <div className="div-perguntas">
-            <img src="/imgs/Mais.svg" alt="" />
-            <p className="text-perguntas">Como faço para começar a usar o PuBook?</p>
-          </div>
-          <div className="linha"></div>
-          <div className="div-perguntas">
-            <img src="/imgs/Mais.svg" alt="" />
-            <p className="text-perguntas">Existe um limite de leitura no PuBook?</p>
-          </div>
-          <div className="linha"></div>
-          <div className="div-perguntas">
-            <img src="/imgs/Mais.svg" alt="" />
-            <p className="text-perguntas">Quero ler um livro que não está disponível, o que devo fazer?</p>
-          </div>
-          <div className="linha"></div>
+          <h2 className="text-[--gray-bg] text-4xl font-bold mb-10">Perguntas Frequentes</h2>
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1">
+              <div className="flex gap-3">
+                <img src="/imgs/Mais.svg" alt="" />
+                <AccordionTrigger className="perguntas-text">O que é o PuBook ?</AccordionTrigger>
+              </div>
+                <AccordionContent className="text-perguntas">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <div className="flex gap-3">
+                <img src="/imgs/Mais.svg" alt="" />
+                <AccordionTrigger className="perguntas-text">Preciso pagar para usar o PuBook ?</AccordionTrigger>
+              </div>
+                <AccordionContent className="text-perguntas">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <div className="flex gap-3">
+                <img src="/imgs/Mais.svg" alt="" />
+                <AccordionTrigger className="perguntas-text">Quem pode usar o PuBook ?</AccordionTrigger>
+              </div>
+                <AccordionContent className="text-perguntas">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <div className="flex gap-3">
+                <img src="/imgs/Mais.svg" alt="" />
+                <AccordionTrigger className="perguntas-text">Como faço para começar a usar o PuBook ?</AccordionTrigger>
+              </div>
+                <AccordionContent className="text-perguntas">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <div className="flex gap-3">
+                <img src="/imgs/Mais.svg" alt="" />
+                <AccordionTrigger className="perguntas-text">Existe um limite de leitura no PuBook ?</AccordionTrigger>
+              </div>
+                <AccordionContent className="text-perguntas">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <div className="flex gap-3">
+                <img src="/imgs/Mais.svg" alt="" />
+                <AccordionTrigger className="perguntas-text">Quero ler um livro que não está disponível, o que devo fazer ?</AccordionTrigger>
+              </div>
+                <AccordionContent className="text-perguntas">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </section>
         {/* Contatos Section */}
         <section id="Contatos" className="w-full">
@@ -80,12 +112,12 @@ export default function Home() {
           <div className="bg-[--orange-bg] px-20 py-10 flex justify-around">
             {/* Left Side */}
             <div>
-              <img src="/imgs/Logo.png" alt="" className="w-40 mb-5"/>
+              <img src="/imgs/Logo.png" alt="" className="w-40 mb-5" />
               {/* Links Redes Sociais */}
               <div className="flex gap-5">
-                <a href=""><img src="/imgs/Gmail.svg" alt="" className="hover:scale-[1.1]"/></a>
-                <a href=""><img src="/imgs/Facebook.svg" alt="" className="hover:scale-[1.1]"/></a>
-                <a href=""><img src="/imgs/Instagram.svg" alt="" className="hover:scale-[1.1]"/></a>
+                <a href=""><img src="/imgs/Gmail.svg" alt="" className="hover:scale-[1.1]" /></a>
+                <a href=""><img src="/imgs/Facebook.svg" alt="" className="hover:scale-[1.1]" /></a>
+                <a href=""><img src="/imgs/Instagram.svg" alt="" className="hover:scale-[1.1]" /></a>
               </div>
             </div>
             {/* Middle Side */}
