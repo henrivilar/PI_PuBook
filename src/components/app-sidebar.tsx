@@ -34,23 +34,23 @@ const data = {
   },
   navMain: [
     {
-      title: "Henrique",
+      title: "Inicio",
       url: "/login",
       icon: SquareTerminal,
       isActive: true,
     },
     {
-      title: "Models",
+      title: "Categorias",
       url: "#",
       icon: Bot,
     },
     {
-      title: "Documentation",
+      title: "Favoritos",
       url: "#",
       icon: BookOpen,
     },
     {
-      title: "Settings",
+      title: "Histórico",
       url: "#",
       icon: Settings2,
     },
